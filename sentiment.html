@@ -38,9 +38,28 @@
                 <h2>Natural Language Processing</h2>
                 <h4>Sentiment Analisys (Text Clasification)</h4>
             </div>
-
+            <div id="sentiment-analizer-container" class="container mt4">
+                <h5>Single Input</h5>
+                <div class="d-flex align-items-center">
+                    <label for="sentimentText" class="mb0 text-nowrap" style="margin-right: 15px;">Enter Text to
+                        Analize</label>
+                    <input type="text" class="form-control flex-grow-1" id="sentimentText"
+                        style="margin-right: 15px;margin-left:15px" placeholder="Enter Text"
+                        value="I love transformers">
+                    <button id="analizeButton" class="btn btn-primary" onclick="initializeModel()">Analize</button>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        async function initializeModel() {
+            console.log("initialize model")
+        }
+
+        async function analizeSentiment() {
+            console.log("initialize model")
+        }
+    </script>
 </body>
 
 </html>
